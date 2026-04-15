@@ -7,7 +7,7 @@
     <meta name="description" content="Gemütliches Café in Berlin mit leckeren Manti, hausgemachten Kuchen und feinem Kaffee. Vegetarische und vegane Optionen verfügbar.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --brown-dark: #3D2B1F;
@@ -183,6 +183,67 @@
             position: relative;
             overflow: hidden;
             background: linear-gradient(135deg, var(--beige-light) 0%, var(--beige) 100%);
+        }
+
+        /* Lava Lamp Blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.4;
+            animation: blob-float 20s infinite ease-in-out;
+        }
+
+        .blob-1 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--pink) 0%, transparent 70%);
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .blob-2 {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+            bottom: 20%;
+            right: 15%;
+            animation-delay: -5s;
+        }
+
+        .blob-3 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--pink-dark) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -10s;
+        }
+
+        .blob-4 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, var(--gold-light) 0%, transparent 70%);
+            top: 20%;
+            right: 25%;
+            animation-delay: -15s;
+        }
+
+        @keyframes blob-float {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+            50% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
+            75% {
+                transform: translate(20px, 10px) scale(1.05);
+            }
         }
 
         .hero-content {
@@ -1089,7 +1150,7 @@
         <div class="container">
             <a href="#" class="logo">
                 <div class="logo-icon">🥟</div>
-                Eat Manti
+                <span style="font-family: 'Dancing Script', cursive; font-size: 1.4rem; font-weight: 600; color: var(--brown-dark);">Eat Manti</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">Über uns</a></li>
@@ -1108,6 +1169,10 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
         <div class="hero-decoration hero-decoration-1"></div>
         <div class="hero-decoration hero-decoration-2"></div>
         <div class="container">
