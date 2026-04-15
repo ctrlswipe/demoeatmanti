@@ -749,11 +749,11 @@
             overflow: hidden;
             position: relative;
             cursor: pointer;
+            aspect-ratio: 1/1;
         }
 
         .gallery-item:nth-child(1) {
             grid-row: span 1;
-            aspect-ratio: 1/1;
         }
 
         .gallery-item img {
@@ -1122,6 +1122,10 @@
                 font-size: 2.5rem;
             }
 
+            .hero-image {
+                margin-top: 40px;
+            }
+
             .menu-grid {
                 grid-template-columns: 1fr;
             }
@@ -1161,7 +1165,7 @@
         <div class="container">
             <a href="#" class="logo">
                 <img src="images/logo.png" alt="Eat Manti Logo" style="width:42px;height:42px;object-fit:contain;">
-                <span style="font-family: 'Dancing Script', cursive; font-size: 1.6rem; font-weight: 600; color: var(--brown-dark);">Eat Manti</span>
+                <span style="font-family: 'Dancing Script', cursive; font-size: 1.6rem; font-weight: 600; color: var(--brown-dark); text-shadow: 0 0 2px white;">Eat Manti</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">Über uns</a></li>
