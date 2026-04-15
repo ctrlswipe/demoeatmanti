@@ -739,8 +739,8 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 250px);
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 250px;
             gap: 16px;
         }
 
@@ -752,7 +752,8 @@
         }
 
         .gallery-item:nth-child(1) {
-            grid-row: span 2;
+            grid-row: span 1;
+            aspect-ratio: 3/4;
         }
 
         .gallery-item img {
@@ -1369,9 +1370,6 @@
                 </div>
                 <div class="gallery-item">
                     <img src="images/cappuccino.jpg" alt="Cappuccino" style="width:100%;height:100%;object-fit:cover;">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/cafe-interior.jpg" alt="Café" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="gallery-item">
                     <img src="images/chocolate-cake.jpg" alt="Schokolade" style="width:100%;height:100%;object-fit:cover;">
